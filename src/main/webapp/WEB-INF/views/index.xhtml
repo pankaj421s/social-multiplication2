@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+     <h:head>
+     <title>Welcome</title>
+     </h:head>
+<h:body>
+
+    <h:form>
+    <h3>Please enter your name and Password</h3>
+    <table>
+    <tr>
+    <td>
+    Name:
+    </td>
+    <td>
+    <h:inputText value="#{user.name}"></h:inputText>
+    </td>
+    </tr>
+ <tr><td>Password: </td>
+ <td>
+ <h:inputSecret value="#{user.password}"></h:inputSecret>
+ </td></tr>
+    </table>
+    <h:commandButton value="Login" action="welcome"/>
+    </h:form>
+
+</h:body>
+</html>
