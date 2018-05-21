@@ -22,6 +22,10 @@ public class HomeController {
 	}
 	@ExceptionHandler(Exception.class)
 	//@ResponseBody
+	public String sayHello()
+	{
+		return "Hello";
+	}
 	public String databaseError(Exception e)
 	{
 		//return e.getMessage();
